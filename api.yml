@@ -41,6 +41,31 @@ paths:
           schema:
             $ref: '#/definitions/ErrorModel'
 
+  /auth/validate_token:
+    get:
+      summary: Valida la sesion de usuario.
+      operationId: validateSession
+      parameters:
+        - name: access-token, client, uid
+          in: header
+          required: true
+          description: Token actual y cliente del uid de la sesion.
+          schema:
+            $ref: '#/definitions/Headers'
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/LoginData'
+        '404':
+          description: Not Found
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '500':
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/ErrorModel'
+
   /auth/sign_out:
     delete:
       summary: Closes User session.
