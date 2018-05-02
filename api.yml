@@ -19,9 +19,9 @@ paths:
   /auth/sign_in:
     post:
       summary: Creates a new session.
-      operationId: createSeassion
+      operationId: createSession
       parameters:
-        - name: User
+        - name: email, password
           in: body
           required: true
           description: User Object.
@@ -46,7 +46,7 @@ paths:
       summary: Closes User session.
       operationId: deleteSeassion
       parameters:
-        - name: user 
+        - name: user
           in: header
           required: true
           description: current token and id.
@@ -83,7 +83,7 @@ definitions:
         type: string
       image:
         type: string
-        
+
   # Sessions
   Data:
     type: object
@@ -91,7 +91,7 @@ definitions:
       data:
         type: object
         $ref: '#/definitions/User'
-        
+
   Success:
     type: object
     properties:
