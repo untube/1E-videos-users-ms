@@ -109,6 +109,26 @@ definitions:
       image:
         type: string
 
+  sessionData:
+    type: object
+    properties:
+      id:
+        type: integer
+      email:
+        type: string
+      name:
+        type: string
+      nickname:
+        type: string
+      image:
+        type: string
+      token:
+        type: string
+      type:
+        type: string
+      client:
+        type: string
+
   # Sessions
   Data:
     type: object
