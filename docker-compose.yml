@@ -11,7 +11,7 @@ services:
       MYSQL_DATABASE: auth
       MYSQL_HOST: auth-db
   auth-ms:
-    build: .
+    image: joahernandezca/2b_authentication
     command: bash -c "sleep 40 && rm -f tmp/pids/server.pid && bundle exec rails db:migrate && bundle exec rails db:seed && bundle exec rails s -p 4000 -b '0.0.0.0'"
     ports:
       - "4000:4000"
