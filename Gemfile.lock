@@ -70,6 +70,7 @@ GEM
     minitest (5.11.3)
     mysql2 (0.5.1-x64-mingw32)
     mysql2 (0.5.1-x86-mingw32)
+    net-ldap (0.16.1)
     nio4r (2.3.0)
     nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.3.0)
@@ -135,6 +136,7 @@ DEPENDENCIES
   byebug
   devise_token_auth (~> 0.1, >= 0.1.39)
   mysql2 (>= 0.3.18, < 0.6.0)
+  net-ldap
   puma (~> 3.7)
   rails (~> 5.1.6)
   tzinfo-data

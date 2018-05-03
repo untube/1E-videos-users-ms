@@ -69,7 +69,7 @@ paths:
   /auth/sign_out:
     delete:
       summary: Closes User session.
-      operationId: deleteSeassion
+      operationId: deleteSession
       parameters:
         - name: user
           in: header

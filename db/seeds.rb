@@ -8,26 +8,36 @@
 User.destroy_all
 
 User.create(
-  email: "dafrodriguezro@gmail.com",
-  password: "arquisoft"
+  email: "dafrodriguezro@unal.edu.co",
+  password: "arquisoft",
+  name: "estudiante",
+  nickname: "arquiStudent"
 )
 
 User.create(
-  email: "joahernandezca@gmail.com",
-  password: "arquisoft"
+  email: "joahernandezca@unal.edu.co",
+  password: "arquisoft",
+  name: "estudiante",
+  nickname: "arquiStudent"
 )
 
 User.create(
-  email: "sagilm@gmail.com",
-  password: "arquisoft"
+  email: "sagilm@unal.edu.co",
+  password: "arquisoft",
+  name: "estudiante",
+  nickname: "arquiStudent"
 )
 
 User.create(
-  email: "jnsastoquee@gmail.com",
-  password: "arquisoft"
+  email: "jnsastoquee@unal.edu.co",
+  password: "arquisoft",
+  name: "estudiante",
+  nickname: "arquiStudent"
 )
 
 User.create(
-  email: "pcberriop@gmail.com",
-  password: "arquisoft"
+  email: "pcberriop@unal.edu.co",
+  password: "arquisoft",
+  name: "estudiante",
+  nickname: "arquiStudent"
 )
