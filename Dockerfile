@@ -1,12 +1,12 @@
 FROM ruby:2.3
 
-RUN mkdir /auth-ms
-WORKDIR /auth-ms
+RUN mkdir /authentication-ms
+WORKDIR /authentication-ms
 
-ADD Gemfile /auth-ms/Gemfile
-ADD Gemfile.lock /auth-ms/Gemfile.lock
+ADD Gemfile /authentication-ms/Gemfile
+ADD Gemfile.lock /authentication-ms/Gemfile.lock
 
 RUN bundle install
-ADD . /auth-ms
+ADD . /authentication-ms
 
-EXPOSE 4000
+EXPOSE 3000
