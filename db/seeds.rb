@@ -8,36 +8,9 @@
 User.destroy_all
 
 User.create(
-  email: "dafrodriguezro@unal.edu.co",
-  password: "arquisoft",
-  name: "estudiante",
-  nickname: "arquiStudent"
+  email: "baangaritar@unal.edu.co",
+  password: "SoftArchitecture",
+  name: "Bryan Antonio Angarita Rodriguez",
+  nickname: "baangaritar"
 )
 
-User.create(
-  email: "joahernandezca@unal.edu.co",
-  password: "arquisoft",
-  name: "estudiante",
-  nickname: "arquiStudent"
-)
-
-User.create(
-  email: "sagilm@unal.edu.co",
-  password: "arquisoft",
-  name: "estudiante",
-  nickname: "arquiStudent"
-)
-
-User.create(
-  email: "jnsastoquee@unal.edu.co",
-  password: "arquisoft",
-  name: "estudiante",
-  nickname: "arquiStudent"
-)
-
-User.create(
-  email: "pcberriop@unal.edu.co",
-  password: "arquisoft",
-  name: "estudiante",
-  nickname: "arquiStudent"
-)
