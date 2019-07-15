@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :ldap
-  resources :users
+  resources :users, only: [:show]
   mount_devise_token_auth_for 'User', at: 'auth',
     controllers: {
       sessions: 'sessions'

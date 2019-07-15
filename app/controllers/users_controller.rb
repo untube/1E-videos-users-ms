@@ -1,11 +1,18 @@
 class UsersController < ApplicationController
-    def show
-        render json: @user
-    end
     
-    private
-        # Only allow a trusted parameter "white list" through.
-        def user_params
-            params.require(:user).permit(:id)
-        end
+    before_action :set_user, only: [:show]
+
+    def show 
+	@user = User.find(params[:id])
+	render json: @user
+   end 
+
+   private
+      def set_user
+        @user = User.find(params[:id])
+      end
+   
+      def user_params
+        params.require(:user).permit(:id)
+      end
 end
